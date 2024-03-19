@@ -5,6 +5,7 @@ public class QuickSort {
         int[] sortArr = {12,5,9,3,4,9,8,5,7,4,3,2,1};
         System.out.println(("Before: ") + Arrays.toString(sortArr));
 
+
         quicksort(sortArr, 0, sortArr.length -1);
 
         System.out.println(("After: ") + Arrays.toString(sortArr));
@@ -15,9 +16,12 @@ public class QuickSort {
         if (low >= high){
             return;
         }
-        int pivot = array[high];
+        int pivotMidl = array.length / 2 - 1;
+        int pivot = array[pivotMidl];
         int leftPointer = low;
         int rightPointer = high;
+        swap(array, pivotMidl, high);
+
 
         while (leftPointer < rightPointer){
 
