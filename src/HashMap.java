@@ -17,8 +17,7 @@ class TelefonBuch{
             System.out.println(telefonBuch.get(key));
         return telefonBuch.get(key);
     }
-
-
+    
 
     Map<Integer, String> telefonBuch = new java.util.HashMap<>() {{
         put(234567, "Manfred");
